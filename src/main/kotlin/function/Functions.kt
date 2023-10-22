@@ -7,18 +7,12 @@ import java.lang.Math.pow
 */
 fun getGreeting(name: String) = "Hello $name"
 
-
-
-
 /*
  * Function to add two integers
  */
 fun addInt(num1: Int, num2: Int): Int {
     return num1 + num2
 }
-
-
-
 
 /**
  * Function that takes student details

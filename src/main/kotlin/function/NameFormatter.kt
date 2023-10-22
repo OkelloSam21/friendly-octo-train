@@ -6,12 +6,19 @@ package function
 // function takes a formatting function parameter
 // function should print the result of the passed format function
 
-fun nameFormatter(firstName: String, LastName: String, format: (String, String) -> String) {
-    println("Full Name is: ${format(firstName, LastName)}")
+fun nameFormatter(firstName: String, lastName: String, format: (String, String) -> String) {
+    println(format(firstName, lastName))
+}
+
+val basicFormatter: (String, String) -> String = { fName, lName ->
+    "$fName $lName"
+}
+
+val fancyFormatter: (String, String) -> String = { fName, lName ->
+    "First Name is $fName and Last Name is $lName"
 }
 
 fun main() {
-    nameFormatter("Samuel", "Okello") { fName, lName ->
-        "$fName $lName"
-    }
+    nameFormatter("Samuel", "Okello", basicFormatter)
+    nameFormatter("Samuel", "Okello", fancyFormatter)
 }

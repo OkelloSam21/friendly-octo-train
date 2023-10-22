@@ -4,7 +4,7 @@ var greetingFunction: () -> Unit = {
     println("Hello Sam")
 }
 
-var getGreeting: (String) -> String ={
+var getGreeting: (String) -> String = {
     "Hello $it"
 }
 fun main() {
