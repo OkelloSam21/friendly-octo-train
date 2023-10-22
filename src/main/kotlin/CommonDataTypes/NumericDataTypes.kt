@@ -1,3 +1,5 @@
+package CommonDataTypes
+
 fun main() {
     val aInt: Int = 0
     val anotherInt = 0
