@@ -1,16 +1,15 @@
 package contolFlowStructure
 
 fun main() {
-
     /**
      * print values from 0 to 5 (5 is exclusive
      */
     for (i in 0 until 5)
 
-    /**
-     * print values from 0 t0 5
-     */
-    for (i in 0..5) println(i)
+        /**
+         * print values from 0 t0 5
+         */
+        for (i in 0..5) println(i)
     /**
      * print values of i from 10 to 0
      */
