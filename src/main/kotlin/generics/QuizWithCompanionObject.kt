@@ -36,6 +36,9 @@ class QuizWithCompanionObject {
 
 fun main() {
 //    println("${QuizWithCompanionObject.answered} of ${QuizWithCompanionObject.total} answered.")
-    val quiz = QuizWithCompanionObject()
-    quiz.printQuiz()
+//    val quiz = QuizWithCompanionObject()
+//    quiz.printQuiz()
+    QuizWithCompanionObject().apply {
+        printQuiz()
+    }
 }
