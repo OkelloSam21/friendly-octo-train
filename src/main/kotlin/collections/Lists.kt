@@ -18,4 +18,9 @@ fun main() {
 
     // Call indexOf(), passing in "Pluto", and print the result.
     println(solarSystem.indexOf("Pluto"))
+
+    // print out each planet name on a separate line using a for loop
+    for (planet in solarSystem){
+        println(planet)
+    }
 }
