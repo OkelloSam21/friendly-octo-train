@@ -1,4 +1,4 @@
-package function.higher_order_function
+package function.higherOrderFunction
 
 class Cookie(
     val name: String,
@@ -54,6 +54,6 @@ val cookies = listOf(
 )
 fun main() {
     cookies.forEach {
-        println("Menu item: $it")
+        println("Menu item: ${it.name}")
     }
 }
