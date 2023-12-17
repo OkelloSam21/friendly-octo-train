@@ -58,6 +58,7 @@ fun main() {
     cookies.forEach {
         println("Menu item: ${it.name}")
     }
+    println()
 
     // using map() function
     val fullMenu = cookies.map {
@@ -67,6 +68,7 @@ fun main() {
     fullMenu.forEach {
         println(it)
     }
+    println()
 
     // Using filter() to filter the cookies list
     val softBakedMenu = cookies.filter {
@@ -76,4 +78,11 @@ fun main() {
     softBakedMenu.forEach {
         println("${it.name} - $${it.price}")
     }
+    println()
+
+    // Use fold to calculate the total price of all the cookies
+    val totalPrice = cookies.fold(0.0) { total, cookie ->
+        total + cookie.price
+    }
+    println("Total price: $ $totalPrice")
 }
